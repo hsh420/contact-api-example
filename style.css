@@ -1,0 +1,96 @@
+main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.pendingCount {
+  border: 1px solid #d2d2d2;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.contactList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  height: 280px;
+  width: 180px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px 0 #d2d2d2;
+}
+
+.backgroundImg {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+.deleteBtn {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+
+.contactInformation {
+  margin-top: 60px;
+}
+
+.contactInformation > h4 {
+  margin: 10px 0 5px 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.connectBtn {
+  color: blue;
+  border-radius: 10px;
+  width: 150px;
+  border: 1px solid blue;
+  font-weight: 600;
+  padding: 6px 16px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.connectBtn:hover {
+  background-color: lightblue;
+  box-shadow: inset 0 0 0 1px blue;
+}
+
+.contactDescription {
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
