@@ -99,10 +99,17 @@ function renderPendingCount() {
 contactList.addEventListener("click", (event) => {
   console.log(event);
   if (event.target.className === "connectBtn") {
-    event.target.innerText = "Pending";
-    pendingCount++;
-    localStorage.setItem("pendingCount", pendingCount);
-    renderPendingCount();
+    if (event.target.innerText === "Connect") {
+      event.target.innerText = "Pending";
+      pendingCount++;
+      localStorage.setItem("pendingCount", pendingCount);
+      renderPendingCount();
+    } else if (event.target.innerText === "Pending") {
+      event.target.innerText = "Connect";
+      pendingCount--;
+      localStorage.setItem("pendingCount", pendingCount);
+      renderPendingCount();
+    }
   }
   if (event.target.className === "deleteBtn") {
     deleteContactAndAddNew(event.target.id);
